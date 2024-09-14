@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hospital Management System</title>
+		{% load static %}
+		<link rel="stylesheet" href="{%static 'css/myFirst.css' %}">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">
+					<h1>HealthCare</h1>
+				</div>
+
+				<ul class="nav-links">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="{% url 'login' %} ">Login</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="hero">
+			<div class="hero-text">
+				<h2>Efficent &amp; Reliable Hospital Management System</h2>
+				<p>Manage patient records, appointment, and staff with ease</p>
+				<a href="{% url 'login' %} " class="cta-btn">Get started</a>
+			</div>
+			<div class="hero-image">
+				<img src="" alt="Hospital Management System">
+			</div>
+		</section>
+
+		<section class="features">
+			<h2>Our Key Features</h2>
+			<div class="features-container">
+				<div class="feature-box">
+					<h3>Patient Records</h3>
+					<p>Track and manage all patient records securely and efficiently</p>
+				</div>
+				<div class="feature-box">
+					<h3>Appointment Scheduling</h3>
+					<p>Seamless Scheduling for doctors and patients</p>
+				</div>
+				<div class="feature-box">
+					<h3>Staff Management</h3>
+					<p>Efficent staff management with role-based access control</p>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<p> &copy; 2024 HealthCare+. All Rights Reserved.</p>
+		</footer>
+	</body>
+</html>
